@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2family=Roboto&family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(
+    45deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* remove default styles from anchor tag */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+.hero-card {
+  width: max-content;
+  text-align: center;
+  color: white;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+#name {
+  width: 100%;
+  max-width: 100ch;
+  font-size: 2.5rem;
+}
+
+#introduction {
+  width: 100%;
+  max-width: 100ch;
+  font-size: 1rem;
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 0.5rem;
+}
+
+.social-media-links__cover {
+  /* rounded button that holds a social media link and zooms on hover */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.social-media-links__cover:hover {
+  transform: scale(1.1);
+  background-color: #ad6300;
+}
+
+.social-media-links__cover:hover a {
+  color: #fff;
+}
+
+.fa {
+  font-size: 1.25rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: #ad6300;
+  /* add transition for color change */
+  transition: 0.3s;
+}
+
+.fa:hover {
+  color: white;
+}
+
+.nav-card {
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  color: #ad6300;
+  background-color: white;
+}
+
+.nav-scrolled {
+  opacity: 1;
+  background: white;
+  color: #ad6300;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: stretch;
+  gap: 8px;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  padding: 0.5rem;
+  z-index: 2;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  font-weight: bolder;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  padding: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-item:last-child {
+  border-right-width: 2px;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+p#bio {
+  margin: 20px 0;
+}
+
+div#short-notes {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 4px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  .hero-card {
+    text-align: left;
+    padding-left: 1.5rem;
+    width: 100%;
+  }
+
+  .avatar__lg {
+    width: 300px;
+    height: 300px;
+  }
+
+  #name {
+    max-width: 100%;
+    font-size: 5rem;
+  }
+
+  #introduction {
+    max-width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .about-card {
+    align-items: flex-start;
+  }
+
+  .social-media-links {
+    margin-left: 0;
+  }
+
+  .nav-card {
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem;
+    width: 100%;
+    opacity: 1;
+    background: none;
+  }
+
+  .nav-list {
+    padding: 0.5rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 5rem;
+  }
+
+  .nav-item {
+    border: 1px solid #fff;
+    border-radius: 2px;
+    width: 60%;
+    height: 100%;
+    color: #fff;
+    font-weight: normal;
+    padding: 2rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    font-size: 1.75rem;
+  }
+
+  .nav-item:hover {
+    transform: scale(1.01);
+    color: white;
+    box-shadow: 0 0 5px #0fa, 0 0 10px #0fa, 0 0 1px #0fa, 0 0 1px #0fa;
+  }
+}
