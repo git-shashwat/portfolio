@@ -19,6 +19,7 @@ body::-webkit-scrollbar {
 a {
   text-decoration: none;
   color: inherit;
+  font-weight: bold;
 }
 
 a:hover {
@@ -26,13 +27,21 @@ a:hover {
   color: inherit;
 }
 
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 95vh;
   font-family: "Open Sans", sans-serif;
+}
+
+.main {
+  height: 100vh;
 }
 
 .hero-card {
@@ -179,6 +188,32 @@ div#short-notes {
   gap: 4px;
 }
 
+.experience-card {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid white;
+  padding: 1rem;
+}
+
+.experience-card h2 {
+  font-size: 1.25rem;
+}
+
+.experience-card h5 {
+  font-size: 1rem;
+}
+
+h2.company {
+  font-weight: bold;
+}
+
+#experience {
+  margin-bottom: 2rem;
+}
+
 @media only screen and (min-width: 768px) {
   .hero {
     flex-direction: row;
@@ -208,6 +243,7 @@ div#short-notes {
 
   .about-card {
     align-items: flex-start;
+    font-size: 1rem;
   }
 
   .social-media-links {
@@ -226,7 +262,6 @@ div#short-notes {
 
   .nav-list {
     padding: 0.5rem;
-    list-style: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
