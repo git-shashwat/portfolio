@@ -41,6 +41,7 @@ ul {
   justify-content: center;
   align-items: center;
   font-family: "Open Sans", sans-serif;
+  height: 100vh;
 }
 
 .main {
@@ -48,9 +49,13 @@ ul {
 }
 
 .hero-card {
-  width: max-content;
   text-align: center;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4rem;
 }
 
 .avatar {
@@ -70,7 +75,6 @@ ul {
   width: 100%;
   max-width: 100ch;
   font-size: 1rem;
-  margin-top: 2rem;
 }
 
 .social-media-links {
@@ -232,6 +236,7 @@ h2.company {
     text-align: left;
     padding-left: 1.5rem;
     width: 100%;
+    align-items: flex-start;
   }
 
   .avatar__lg {
